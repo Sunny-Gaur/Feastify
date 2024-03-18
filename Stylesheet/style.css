@@ -1,0 +1,236 @@
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+:root{
+    --bg-my-white:#fff;
+    --custombg:#EBE1D5;
+    --main-hover-color:rgb(65, 239, 239);
+    --main-hover-color-shade:rgba(65, 239, 239, 0.591);
+
+    --main-family:'Domaine-Text';
+
+}
+
+::-webkit-scrollbar{
+  background-color:var(--main-hover-color-shade);
+  width: 2px;
+}
+::-webkit-scrollbar-thumb{
+  background-color:white;
+}
+p,h1,h2,h3,li a,.navbar-brand{
+    font-family: 'Domaine-Text'!important;
+}
+
+
+
+li a{
+    text-transform: uppercase;
+    color: var(--bg-my-white) !important;;
+    font-weight: 600;
+}
+.navbar-brand{
+    font-size: 80px;
+    line-height: 60px;
+    font-weight: 900;
+    color: var(--bg-my-white) !important;
+}
+h3{
+    font-weight: 300;
+    text-align: justify;
+}
+li{
+    list-style: none;
+}
+.ul-fst{
+    font-size: 19px;
+    color: rgb(88, 85, 82);
+    font-weight: 600;
+}
+.bdr{
+    border: 2px solid var(--bg-my-white);
+}
+.navbar-icon{
+  color:white;
+  font-size: 30px !important;
+}
+.navbar-light .navbar-toggler{
+  border-color:transparent!important;
+}
+.navbar-toggler::selection{
+  border-color: transparent !important;
+}
+
+
+.wrapper{
+    background:url("https://images.squarespace-cdn.com/content/v1/5d529b54c9e4c40001de375f/1643920672104-UVHRV6L4MAWAPBOIYKWS/abbots-butcher-savory-ground-beef-2500w.jpg?format=2500w");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+button{
+    color: var(--bg-my-white) !important;
+}
+.wrapper-txt{
+    font-size: 50px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    line-height:64px;
+    margin-bottom: 0;
+
+}
+
+.percent{
+    color:var(--main-hover-color)
+
+}
+.carousel-indicators{
+    position: absolute;
+    bottom: -30px !important;
+    border-radius: 60% !important;
+}
+
+.go{
+    color: red;
+    font-size: 300px;
+}
+
+
+.upper{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+.bn-parent{
+  position: relative;
+}
+.carousel-item {
+    transition: transform 1s ease-in-out;
+  }
+
+  .custom-btn,.custom-btn2{
+    border: 1px solid var(--bg-my-white);
+    background-color: transparent;
+    color: black !important;
+  }
+  #nav-btn:hover{
+    background-color: var(--main-hover-color) !important;
+    transition: background-color 1s ease-in-out !important;
+  }
+  .custom-btn2{
+    color: white !important;
+  }
+  .custom-bg{
+    background-color: var(--custombg);
+  }
+
+  .ul-datas{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 200;
+  }
+  .ul-fst{
+    margin-bottom: 20px;
+  }
+
+  .footer-big-txt,.big-txt{
+    font-size:2rem;
+  }
+  .form-control{
+    background:transparent;
+  }
+  footer{
+    position: relative;
+  }
+  .ps1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .ps2{
+    bottom:0px;
+    right: 0 ;
+  }
+  .Ex-txt1{
+    font-size: 20px;
+    font-family: 'Domaine-Text';
+  }
+  .sm-navbar-brand{
+    display: none;
+  }
+  .Ex-txt-2{
+    font-size: 50px;
+    line-height: 40px;
+  }
+   p{
+    margin-bottom: 0px;
+   }
+
+  .custom-nav{
+    color: black !important;
+  }
+
+  .nav-wrapper{
+    transition: transform 2s ease-in-out !important;
+  }
+  .social-icons{
+    font-size: 20px;
+  
+
+  }
+
+  .signup{
+    color: #ffffff !important;
+  }
+
+  a:hover{
+    border-bottom:2px solid var(--main-hover-color);
+  }
+  .carousel-item p{
+    font-size: 30px !important;
+    color: black;
+    font-weight:2;
+  }
+ 
+  @media screen and (max-width:991px){
+    ul{
+      gap: 0 px !important;
+    }
+    .nav-wrapper{
+      background-color: rgba(14, 82, 150, 0.772);
+
+    }
+    ul li a{
+      color: var(--bg-my-white) !important;
+      margin-top: 20px;
+    }
+    .navbar-brand{
+      display: none;
+    }
+    .sm-navbar-brand{
+      display: block;
+      font-size: 40px;
+      color: var(--bg-my-white);
+    }
+  
+
+  }
+  @media screen and (max-width:570px) {
+    .carousel-item p{
+      font-size: 15px !important;
+    }
+  }
+  @media screen and (max-width:356px) {
+    .carousel-item p{
+      font-size: 12px !important;
+    }
+    h1,h2,h3{
+      font-size: 20px;
+    }
+  }
