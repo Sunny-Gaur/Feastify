@@ -10,6 +10,17 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./Stylesheet/style.css">
 
+    <!-- <script>
+        // Fetch the content of home.html and insert it into navbar-placeholder
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error fetching navbar:', error);
+            });
+    </script> -->
 </head>
 
 <body class="">
@@ -22,30 +33,47 @@
                         <span class="navbar-icon"><i class="fa-solid fa-bars"></i></span>
                     </button>
                     <span class="sm-navbar-brand mx-auto">Feastify</span>
-
+        
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav lg-gap-5 md-gap-5  sm-gap-5">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">O u r F o o d s</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    O u r F o o ds
+                                </a>
+                                <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="./grounded.html">
+                                        GROUND
+                                        “Shakeore”
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="./chorizo.html">
+                                            “CHORIZO”
+                                        </a></li>
+                                    <li><a class="dropdown-item" href="./chopped-chickn.html">CHOPPED-CHICK’N
+                                            </a></li>
+                                    <li><a class="dropdown-item" href="./whole-burger.html">WHOLE
+                                            BURGER</a></li>
+    
+                                </ul>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">R e c i p e s</a>
+                                <a href="./Recipies.html" class="nav-link">R e c i p e s</a>
                             </li>
                         </ul>
-                        <span class="navbar-brand mx-auto">Feastify</span>
+                       <span class="navbar-brand mx-auto"> <a href="./index.html" class="nav-bb blc">Feastify</a></span>
                         <ul class="navbar-nav gap-5">
                             <li class="nav-item">
-                                <a href="#" class="nav-link">A b o u t u s</a>
+                                <a href="./About.html" class="nav-link">A b o u t u s</a>
                             </li>
                             <li class="nav-item">
-                                <button class="btn bg-transparent bdr px-5" id="nav-btn">Where To Buy</button>
+                                <button class="btn bg-transparent bdr1 px-5" id="nav-btn">Where To Buy</button>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
-
-
+        
+        
         </div>
         <div class="container">
             <p class="wrapper-txt ">
@@ -57,7 +85,7 @@
     </div>
 
 
-    <section id="Explore">
+    <section id="Explore ">
         <div class="container-fluid mt-5">
             <div class="ex-txt-con text-center mb-5">
                 <p class="Ex-txt1">Explore Our</p>
@@ -68,73 +96,61 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="container">
-                            <div class="row justify-content-evenly">
-                                <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="row justify-content-evenly mb-4">
+                                <div class="col-lg-3 col-md-6 col-sm-12 slider-con">
                                     <img src="./Assets/images/istockphoto-1345624358-2048x2048.jpg" alt=""
                                         class="img-fluid">
                                     <p class="slid-in-txt1">
                                         Plant-Rich
                                     </p>
-                                    <p class="slid-in-txt2">
-                                        chopped chik'n
-                                    </p>
+                                  
 
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img src="./Assets/images/istockphoto-1345624358-2048x2048.jpg" alt=""
+                                <div class="col-lg-3 col-md-6 col-sm-12 slider-con">
+                                    <img src="./Assets/images/food-item4 (3).jpg" alt=""
                                         class="img-fluid">
                                     <p class="slid-in-txt1">
                                         Plant-Rich
                                     </p>
-                                    <p class="slid-in-txt2">
-                                        chopped chik'n
-                                    </p>
+                                  
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img src="./Assets/images/istockphoto-1345624358-2048x2048.jpg" alt=""
+                                <div class="col-lg-3 col-md-6 col-sm-12 slider-con">
+                                    <img src="./Assets/images/food-items (2).jpg" alt=""
                                         class="img-fluid">
                                     <p class="slid-in-txt1">
                                         Plant-Rich
                                     </p>
-                                    <p class="slid-in-txt2">
-                                        chopped chik'n
-                                    </p>
+                                  
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="container">
-                            <div class="row justify-content-evenly">
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img src="./Assets/images/istockphoto-1553473885-2048x2048.jpg" alt=""
+                            <div class="row justify-content-evenly mb-4">
+                                <div class="col-lg-3 col-md-6 col-sm-12 slider-con">
+                                    <img src="./Assets/images/food-item4 (2).jpg" alt=""
                                         class="img-fluid">
                                     <p class="slid-in-txt1">
                                         Plant-Rich
                                     </p>
-                                    <p class="slid-in-txt2">
-                                        chopped chik'n
-                                    </p>
+                                  
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img src="./Assets/images/istockphoto-1553473885-2048x2048.jpg" alt=""
+                                <div class="col-lg-3 col-md-6 col-sm-12 slider-con">
+                                    <img src="./Assets/images/food-items (3).jpg" alt=""
                                         class="img-fluid">
                                     <p class="slid-in-txt1">
                                         Plant-Rich
                                     </p>
-                                    <p class="slid-in-txt2">
-                                        chopped chik'n
-                                    </p>
+                                  
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-sm-12">
-                                    <img src="./Assets/images/istockphoto-1553473885-2048x2048.jpg" alt=""
+                                <div class="col-lg-3 col-md-6 col-sm-12 slider-con">
+                                    <img src="./Assets/images/food-item4 (1).jpg" alt=""
                                         class="img-fluid">
                                     <p class="slid-in-txt1">
                                         Plant-Rich
                                     </p>
-                                    <p class="slid-in-txt2">
-                                        chopped chik'n
-                                    </p>
+                                  
                                 </div>
                             </div>
                         </div>

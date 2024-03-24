@@ -1,0 +1,46 @@
+:root{
+    --main-bg:#EBE1D5;
+}
+.bdr{
+    border-bottom: 2px solid black;
+}
+p{
+    margin: 0px;
+}
+
+.ft-1{
+    font-size: large;
+    letter-spacing:5px;
+}
+
+.ft2{
+    font-size: xx-large;
+}
+.ft-3{
+    font-size: 23px;
+    font-weight: 100;
+    
+}
+
+.nav-wrapper{
+    background-color:rgb(25, 24, 24);
+    color: red;
+}
+.pm{
+    position: relative;
+}
+.ps{
+    position: absolute;
+    background-color:rgb(208, 208, 214);
+    left: 0;
+    top: 30px;
+}
+
+ul li{
+    list-style: none;
+}
+
+.dropdown li a:hover{
+    background-color: rgb(111, 110, 110);
+}
+

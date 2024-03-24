@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Search</title>
+    <script src="https://kit.fontawesome.com/9b6ccb31fc.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <h1 class="text-center">Recipe Search</h1>
+
+        
+
+                    <input type="text" id="data-hare" class="form-control">
+                    <button type="submit"  class="btn btn-success" id="submit">submit</button>
+                </form>
+            </div>
+          
+        </div>
+            <div class="row" id="recipes">
+            </div>
+       
+    </div> -->
+   <p class="recipe-txt text-center">
+    Browse All Recipes 
+   </p>
+<!-- 
+    <script>
+               
+        const apiKey = 'b26aeaa7eefe49a2dad114483344920e';
+        const appId = 'a3c66988';
+        const baseUrl = 'https://api.edamam.com/search';
+
+
+         let input = document.querySelector("#data-hare");
+         let submit=  document.querySelector("#submit");
+     
+        submit.addEventListener("click",function(e){
+            e.preventDefault();
+            const query = input.value;
+             searchRecipes(query)
+            .then(displayRecipes)
+            .catch(error => console.error('Error:', error));
+
+        })
+
+
+        // Function to search for recipes
+        async function searchRecipes(query,start,end) {
+            const url = `${baseUrl}?q=${query}&app_id=${appId}&app_key=${apiKey}&from=${start}&to${end}`;
+
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const data = await response.json();
+                console.log(data.hits);
+                return data.hits || [];
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                return [];
+            }
+        }
+
+
+        // // // Function to display recipes on the page
+        function displayRecipes(recipes) {
+            const recipesContainer = document.getElementById('recipes');
+            recipesContainer.innerHTML = '';
+
+            recipes.forEach(recipe => {
+                const recipeData = recipe.recipe;
+                const recipeElement = document.createElement('div');
+                recipeElement.classList.add("col-lg-4");
+                recipeElement.innerHTML = `
+                    <h2>${recipeData.label}</h2>
+                    <img src="${recipeData.image}" alt="${recipeData.label}">
+                    <p><a href="${recipeData.url}" target="_blank">View Recipe</a></p>
+                `;
+                recipesContainer.appendChild(recipeElement);
+            });
+        }
+
+        // // Initial search query (example: chicken)
+    
+    </script> -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+     </script>
+</body>
+
+</html>

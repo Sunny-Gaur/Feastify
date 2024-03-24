@@ -12,6 +12,21 @@ html{
 
 }
 
+button:active,button:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.custom-btn3{
+  border: 2px solid black;
+  color: black !important;
+}
+.custom-btn3:hover{
+  background-color: #4c5155;
+  color: white !important;
+  transition: backgroud 2s ease-in !important;
+}
+
 ::-webkit-scrollbar{
   background-color:var(--main-hover-color-shade);
   width: 2px;
@@ -36,6 +51,7 @@ li a{
     font-weight: 900;
     color: var(--bg-my-white) !important;
 }
+
 h3{
     font-weight: 300;
     text-align: justify;
@@ -48,7 +64,7 @@ li{
     color: rgb(88, 85, 82);
     font-weight: 600;
 }
-.bdr{
+.bdr1{
     border: 2px solid var(--bg-my-white);
 }
 .navbar-icon{
@@ -113,6 +129,19 @@ button{
 .carousel-item {
     transition: transform 1s ease-in-out;
   }
+  .Searchbtn{
+    position: absolute;
+    right: 0;
+    top:7px;
+    text-align: center;
+  }
+  .btn.Searchbtn:focus{
+      box-shadow: none !important;
+  }
+  
+  .fa-searchengin{
+    color: black;
+  }
 
   .custom-btn,.custom-btn2{
     border: 1px solid var(--bg-my-white);
@@ -120,7 +149,7 @@ button{
     color: black !important;
   }
   #nav-btn:hover{
-    background-color: var(--main-hover-color) !important;
+    background-color: #4c5155 !important;
     transition: background-color 1s ease-in-out !important;
   }
   .custom-btn2{
@@ -129,7 +158,16 @@ button{
   .custom-bg{
     background-color: var(--custombg);
   }
+  .main-col{
+    background-color: var(--custombg);
+  }
 
+  .mx-auto a{
+    text-decoration: none;
+  }
+  .mx-auto a:hover{
+    border-bottom: none;
+  }
   .ul-datas{
     text-align: justify;
     font-size: 18px;
@@ -197,7 +235,89 @@ button{
     color: black;
     font-weight:2;
   }
- 
+
+
+  .slider-con{
+    position: relative;
+  }
+  .slid-in-txt1{
+    background-color: rgba(0, 0, 0, 0.689);
+    color: var(--bg-my-white) !important;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    left:12px;
+    right:12px;
+    display: none;
+  }
+  .slider-con:hover .slid-in-txt1{
+    display: block;
+  }
+
+
+  .recipes-main-head{
+    font-size: xxx-large;
+    line-height: 50px;
+    font-weight: 900;
+    font-family: var(--main-family);
+    border-left: 2px solid black;
+    padding-left: 20px;
+  }
+  .hr{
+    color: var(--custombg);
+  }
+.recipes-head{
+  font-size: xx-large;
+  font-weight: 100;
+}
+
+.recipes-head2{
+  font-size:large ;
+  font-weight: 900;
+
+}
+.form-cont{
+  position: relative;
+}
+
+.nav-bb{
+  color: white;
+
+}
+
+.nav-bb:hover{
+  color: white;
+}
+
+.about-img{
+  background-image:url("../Assets/images/image-asset.png");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.fa-searchengin{
+  position: absolute;
+  right: 10px;
+}
+.filter-res{
+  color: #4c5155;
+}
+.mybg{
+  background: var(--custombg);
+}
+.bottom-fill{
+  height: 30px;
+  background-color: brown;
+}
+
+  .recipes-txt{
+    font-size: 16px;
+    font-weight: 100;
+  }
+  
+  
+
   @media screen and (max-width:991px){
     ul{
       gap: 0 px !important;
@@ -225,6 +345,24 @@ button{
     .carousel-item p{
       font-size: 15px !important;
     }
+    .recipes-main-head{
+      font-size: 30px !important;
+    }
+    
+  }
+
+  @media screen and (max-width:576px) {
+    .img-sm{
+      height: 150px;
+      width: 150px;
+    }
+    .ft-3{
+      text-align: left !important;
+    }
+    .sm-brod{
+      height: 200px !important;
+      width: 200px !important;
+    }
   }
   @media screen and (max-width:356px) {
     .carousel-item p{
@@ -233,4 +371,11 @@ button{
     h1,h2,h3{
       font-size: 20px;
     }
+    .copyright{
+      font-size: 12px;
+    }
+    .footer-last-txt{
+      gap:10px !important;
+    }
+  
   }
