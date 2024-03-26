@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./Stylesheet/style.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
 
     <!-- <script>
         // Fetch the content of home.html and insert it into navbar-placeholder
@@ -313,5 +315,47 @@
         crossorigin="anonymous"></script>
     <script src="index.js"></script>
 </body>
+<script>
+    (function () {
+        emailjs.init("l5Hz3RgIx0NRmjxjB"); // Initialize with your EmailJS user ID
+    })();
+    
+    let mydata = document.querySelector("#godata");
+        console.log(mydata)
+        mydata.addEventListener("click", sendEmail);
+        function sendEmail(e) {
+            e.preventDefault();
+    
+            let myname = document.getElementById("name").value;
+            let email = document.querySelector("#email").value;
+            let message = document.querySelector("#textarea-data").value;
+            let mymodal = document.querySelector("#mymodal");
+            console.log(mymodal);
+    
+        
+            if (myname && email && message) {
+                myname=myname+"";
+                message=message+"";
+    
+                var templateParams = {
+                    to_name: myname,
+                    from_name: email,
+                    message: message
+                };
+    
+                emailjs.send('service_6gw5ib1', 'template_r2v2ynk', templateParams)
+                    .then(function (response) {
+                        console.log('Email sent successfully:', response);
+                        alert("Email send Successfully");
+                        mymodal.style.display="none";
+                    }, function (error) {
+                        alert('Email sending failed:', error);
+                    });
+            }
+            else{
+                alert('please enter any valid value');
+            }
+        }
+    </script>
 
 </html>

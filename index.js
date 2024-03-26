@@ -1,3 +1,4 @@
+
 let navbar = document.querySelector(".nav-wrapper");
 let navlink = document.querySelectorAll(".nav-link");
 let navbrand = document.querySelector(".navbar-brand");
@@ -7,7 +8,6 @@ let navbtn = document.getElementById("nav-btn");
 let navblc = document.querySelector(".blc");
 
 
-console.log()
 
 
 window.addEventListener("scroll", () => {
@@ -46,11 +46,11 @@ const appId = 'a3c66988';
 const baseUrl = 'https://api.edamam.com/search';
 
 let input = document.querySelector("#data-hare");
-let submit = document.querySelector("#submit");
+let submitdata = document.getElementById("submit");
 
 let targetfood = document.querySelector("#target-data");
 
-submit.addEventListener("click", function (e) {
+submitdata.addEventListener("click", function (e) {
     e.preventDefault();
     targetfood.innerHTML="";
     const query = input.value;
@@ -124,6 +124,12 @@ function showdata(result){
             return [];
         }
     }
+
+
+
+   
+
+
 
 
 
